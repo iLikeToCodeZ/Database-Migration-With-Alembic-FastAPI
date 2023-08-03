@@ -6,6 +6,11 @@ Base = declarative_base()
 
 
 class BusinessSymptom(Base):
+    """Creates the data model of the Business-Symptoms data
+
+    Args:
+        Base (_type_): Returns the model schema to be used throughout the application.
+    """
     __tablename__      = 'business_symptom'
 
     id                 = Column(Integer, primary_key=True, autoincrement=True, unique=True)
